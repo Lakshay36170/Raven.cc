@@ -1,7 +1,3 @@
-#### **`render.yaml`**
-This file configures the Render deployment. It allows you to specify build and start commands, environment variables, and other settings. Here’s an example `render.yaml` for a background worker:
-
-```yaml
 services:
   - type: background
     name: my-bot
