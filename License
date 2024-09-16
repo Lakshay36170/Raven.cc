@@ -1,0 +1,17 @@
+#### **`render.yaml`**
+This file configures the Render deployment. It allows you to specify build and start commands, environment variables, and other settings. Here’s an example `render.yaml` for a background worker:
+
+```yaml
+services:
+  - type: background
+    name: my-bot
+    repo: https://github.com/yourusername/my-bot.git
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    env:
+      - key: OWNER_ID
+        value: "123456789"
+      - key: OWNER_USERNAME
+        value: "BotOwner"
+      - key: BOT_TOKEN
+        value: "your-bot-token"
